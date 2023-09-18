@@ -1,0 +1,110 @@
+.App{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background: #c2c2d6;
+}
+.calculator {
+  border: 2px solid #47476b;
+  padding: 5px;
+  background: black;
+  width: 320px;
+  position: relative;
+}
+.outPutScreen {
+  font-size: 29px;
+  font-family: digital;
+  color: white;
+  text-align: right;
+  line-height: 75px;
+  padding-right: 5px;
+}
+
+button {
+  height: 65px;
+  width: 80px;
+  color: white;
+  outline: 1px solid black;
+  border: none;
+  background: #4d4d4d;
+  font-family: Share Tech Mono, monospace;
+  font-size: 20px;
+  cursor:pointer;
+}
+button:hover {
+  color: black;
+  outline: 0.05em solid grey;
+  z-index: 3;
+}
+#equals{
+  width: 320px;
+}
+.buttons{
+  display:grid;
+  grid-template-areas:
+  "clear  subtract multiply divide"
+  "seven eight nine add  "
+  "four five six decimal"
+  "one two three zero "
+  "equals equals equals equals"
+  ;  
+  grid-template-columns:80px 80px 80px 80px ;
+}
+#clear{
+  grid-area: clear;
+}
+#subtract{
+  grid-area: subtract;
+}
+#multiply{
+  grid-area: multiply;
+}
+#divide{
+  grid-area: divide;
+}
+#seven{
+  grid-area: seven;
+}
+#eight{
+  grid-area: eight;
+}
+#nine{
+  grid-area: nine;
+}
+#decimal{
+  grid-area: decimal;
+}
+#four{
+  grid-area: four;
+}
+#five{
+  grid-area: five;
+}
+#six{
+  grid-area: six;
+}
+#add{
+  grid-area: add;
+}
+#one{
+  grid-area: one;
+}
+#two{
+  grid-area: two;
+}
+#three{
+  grid-area: three;
+}
+#zero{
+  grid-area: zero;
+}
+#equals{
+  grid-area: equals;
+}
+#expression{
+  color: white;
+  
+}
